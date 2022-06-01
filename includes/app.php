@@ -5,7 +5,8 @@ require __DIR__ . '/../vendor/autoload.php';//Composer autoload to import depend
 //Para usar las variables de entorno
  $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
  $dotenv->safeLoad();
-require __DIR__ . '/functions.php';//functions document
+
+ require __DIR__ . '/functions.php';//functions document
 require __DIR__ . '/config/database.php';//database connection
 
 //Conexión a las bases de datos
