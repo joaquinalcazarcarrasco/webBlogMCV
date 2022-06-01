@@ -4,7 +4,7 @@
 function connectDB() : mysqli {
 
     //conexión bbdd
-    $db = new mysqli($_ENV['DB_HOST'], $_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_BD']); 
+    $db = new mysqli($_ENV['DB__HOST'], $_ENV['DB__USER'], $_ENV['DB__PASS'], $_ENV['DB__BD']); 
 
     if(!$db){
 
