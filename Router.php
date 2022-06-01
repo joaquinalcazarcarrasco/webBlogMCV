@@ -21,7 +21,8 @@ class Router{
     public function comprobarRutas(){
         
         //$url_actual = $_SERVER['PATH_INFO'] ?? '/';//para local
-        $url_actual = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];//para servidor
+        //$url_actual = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];//para servidor
+        $url_actual = $_SERVER['REQUEST_URI'] ?? '/';//para servidor
         
         $metodo = $_SERVER['REQUEST_METHOD'];
 
