@@ -3,7 +3,7 @@
 //document to link functionality
 require __DIR__ . '/../vendor/autoload.php';//Composer autoload to import dependencies as Image intervention and my classes
 //Para usar las variables de entorno
- $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '../../');
+ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
  $dotenv->safeLoad();
 
  require __DIR__ . '/functions.php';//functions document
