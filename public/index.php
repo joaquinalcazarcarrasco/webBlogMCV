@@ -9,11 +9,6 @@ use Controllers\PaginasController;
 use Controllers\ExperienciasController;
 use Controllers\FormacionesController;
 
-//Muestra la clase y su namespace
-//echo '<pre>';
-//var_dump(NewsController::class);
-//echo '</pre>';
-
 $router = new Router();
 
 //pasamos la ruta y un array con la clase/namespace y su método estático
