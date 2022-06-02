@@ -53,6 +53,13 @@
                             <?php foreach($subcategoriasPorCategoria[$categoria->id] as $subcategoria): ?>
                                 <ul class="competencias__listado">
                                     <?php foreach($competenciasPorSubcategoria[$subcategoria->id] as $competencia): ?>
+                                        <?php 
+                                            echo '<pre>';
+                                            var_dump($competencia);
+                                            echo '</pre>';
+                                            exit;
+                                            
+                                            ?>
                                         <li class="competencias__item"><?php echo $competencia->nombre. ', '; ?></li>
                                     <?php endforeach; ?>
                                     <li class="competencias__item">
