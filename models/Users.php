@@ -123,12 +123,12 @@ class Users extends Entity {
                             if($_GET['from']){
                                 
                                 //redirect to the news
-                                header('Location: /blog/entrada?id=' . $_GET['id']);
+                                header('Content-Type: text/html; charset=utf-8; Location: /blog/entrada?id=' . $_GET['id']);
                             
                             }else{
                                
                                 //redirecto to admin
-                                header('Location: /admin');
+                                header('Content-Type: text/html; charset=utf-8; Location: /admin');
                             }
 
                             

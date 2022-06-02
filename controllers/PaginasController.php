@@ -109,7 +109,7 @@ class PaginasController{
         if(!$id){
 
             //Se redirige al inicio del blog
-            header('location: /');
+            header('Content-Type: text/html; charset=utf-8; Location: /');
         }
 
         //Se obtiene la entrada por su id
@@ -267,11 +267,11 @@ class PaginasController{
                 //Enviar email
                 if($email->send()){
                     
-                    header('Location: /contacto?result=1');
+                    header('Content-Type: text/html; charset=utf-8; Location: /contacto?result=1');
 
                 }else{
 
-                    header('Location: /contacto?result=0');
+                    header('Content-Type: text/html; charset=utf-8; Location: /contacto?result=0');
                 }
 
             }
@@ -387,7 +387,7 @@ class PaginasController{
         if(!$isAdmin){
 
             //se redirecciona
-            header('Location: /');
+            header('Content-Type: text/html; charset=utf-8; Location: /');
         }
         
 

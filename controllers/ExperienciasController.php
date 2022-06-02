@@ -19,7 +19,7 @@ class ExperienciasController{
         if(!$isAdmin){
 
             //se redirecciona
-            header('Location: /');
+            header('Content-Type: text/html; charset=utf-8; Location: /');
         }
 
         //Consulta de todas las categorías
@@ -71,7 +71,7 @@ class ExperienciasController{
         if(!$isAdmin){
 
             //se redirecciona
-            header('Location: /');
+            header('Content-Type: text/html; charset=utf-8; Location: /');
         }
 
         //plantilla cv
@@ -181,7 +181,7 @@ class ExperienciasController{
 
                         if(empty($problemas)){
 
-                            header('Location: /experiencias/index?result=1');
+                            header('Content-Type: text/html; charset=utf-8; Location: /experiencias/index?result=1');
                         }
                     }
 
@@ -214,7 +214,7 @@ class ExperienciasController{
         if(!$isAdmin){
 
             //se redirecciona
-            header('Location: /');
+            header('Content-Type: text/html; charset=utf-8; Location: /');
         }
 
         //para usar plantilla CV
@@ -236,7 +236,7 @@ class ExperienciasController{
         //Si no pasa validación, redirección
         if(!$id){
 
-           header('location: /experiencias/index');
+           header('Content-Type: text/html; charset=utf-8; location: /experiencias/index');
           
         }else{
 
@@ -366,7 +366,7 @@ class ExperienciasController{
         
                                 if(empty($problemas)){
         
-                                    header('Location: /experiencias/index?result=2');
+                                    header('Content-Type: text/html; charset=utf-8; Location: /experiencias/index?result=2');
                                 }
 
                             }
@@ -405,7 +405,7 @@ class ExperienciasController{
         if(!$isAdmin){
 
             //se redirecciona
-            header('Location: /');
+            header('Content-Type: text/html; charset=utf-8; Location: /');
         }
 
         //Cuando se hace llamada POST
@@ -440,7 +440,7 @@ class ExperienciasController{
 
                     if($exito){
 
-                        header('Location: /experiencias/index?result=3');
+                        header('Content-Type: text/html; charset=utf-8; Location: /experiencias/index?result=3');
                     }
                 }
             }
