@@ -23,7 +23,10 @@ class Router{
         //$url_actual = $_SERVER['PATH_INFO'] ?? '/';//para local
         //$url_actual = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];//para servidor
         $url_actual = $_SERVER['REQUEST_URI'] ?? '/';//para servidor
-        
+
+        //Comprobar si hay parametros
+        if(strstr($url_actual, '?')) $url_actual = substr($url_actual, 0, strpos($url_actual, '?'));
+
         $metodo = $_SERVER['REQUEST_METHOD'];
 
         if($metodo === 'GET'){
