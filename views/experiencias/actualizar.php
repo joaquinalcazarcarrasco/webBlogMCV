@@ -6,7 +6,7 @@
             <polyline points="5 7 10 12 5 17" />
             <line x1="13" y1="17" x2="19" y2="17" />
         </svg>
-        <h3 class="heading__texto centrar-texto">Crear Experiencia</h3>
+        <h3 class="heading__texto centrar-texto">Actualizar Experiencia</h3>
     </section>
     
     <div class="volver">
@@ -73,9 +73,6 @@
             <label for="competencias">Puedes escribir una o varias competencias separadas por comas(*):</label>
             <input type="text" name="competencias" id="competencias" placeholder="Ej: Creatividad" <?php echo $competenciasStr ? "value='$competenciasStr'" : ''; ?>>
 
-            <div class="sugerencias">
-                
-            </div>
             
         </fieldset>
 
