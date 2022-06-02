@@ -14,7 +14,14 @@
                     <p><?php echo $error; ?></p>
                 </div>
             <?php endforeach; ?>
-            
+
+            <?php 
+                echo '<pre>';
+                var_dump($news);
+                echo '</pre>';
+                exit;
+            ?>
+
             <form class="form-creating-news" method="POST" enctype="multipart/form-data">
                 <fieldset>
                     <legend>Actualizando entrada</legend>
