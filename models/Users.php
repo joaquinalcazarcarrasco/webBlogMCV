@@ -6,6 +6,7 @@ class Users extends Entity {
 
     //Static attr. Table's name
     protected static $table = 'USERS';
+    
 
     //Static attr. Table's columns
     protected static $columnsDB = ['id', 'email', 'nickname', 'password', 'admin'];
@@ -123,12 +124,12 @@ class Users extends Entity {
                             if($_GET['from']){
                                 
                                 //redirect to the news
-                                header('Content-Type: text/html; charset=utf-8; Location: /blog/entrada?id=' . $_GET['id']);
+                                header('location: /blog/entrada?id=' . $_GET['id']);
                             
                             }else{
                                
                                 //redirecto to admin
-                                header('Content-Type: text/html; charset=utf-8; Location: /admin');
+                                header('location: /admin');
                             }
 
                             

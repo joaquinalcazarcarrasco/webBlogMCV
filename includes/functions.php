@@ -70,7 +70,7 @@ function checkAuth(){
     //Redirect if user's not logged
     if(!$_SESSION['login']){
 
-        header('Content-Type: text/html; charset=utf-8; Location: /blog');
+        header('location: /blog');
     }
 
 }
@@ -83,7 +83,7 @@ function alreadyLogged(){
         
     }else{
 
-        header('Content-Type: text/html; charset=utf-8; Location: /blog');
+        header('location: /blog');
     }
 }
 

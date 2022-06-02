@@ -173,7 +173,7 @@ class NewsController{
         //Si no pasa validación, redirección
         if(!$id){
 
-           header('Content-Type: text/html; charset=utf-8; Location: /admin');
+           header('location: /admin');
           
         }else{
 

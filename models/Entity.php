@@ -106,7 +106,7 @@ class Entity{
         if($result){
            
             //Redirect with a GET parameter (update ok)
-            header('Content-Type: text/html; charset=utf-8; Location:' . static::$path .'result=2');
+            header('location:' . static::$path .'result=2');
            
             
         }
@@ -134,7 +134,7 @@ class Entity{
         if($result){
 
             //Redirecting passing GET parameter (insert ok)
-            header('Content-Type: text/html; charset=utf-8; Location:' . static::$path . 'result=1');
+            header('location:' . static::$path . 'result=1');
             
         }
 
@@ -150,7 +150,7 @@ class Entity{
         //Erase and redirect (message: erase ok)
         if($result){
             $this->eraseImage();
-            header('Content-Type: text/html; charset=utf-8; Location:' . static::$path .'result=3');
+            header('location:' . static::$path .'result=3');
         }
     }
 

@@ -58,12 +58,12 @@ class UsersController{
         if($url_actual==='/administrador/salir'){
 
             //Redirigiendo a inicio
-            header('Content-Type: text/html; charset=utf-8; Location: /');
+            header('location: /');
 
         }else if($url_actual==='/blog/salir'){
 
             //Redirigiendo a inicio de blog
-            header('Content-Type: text/html; charset=utf-8; Location: /blog');
+            header('location: /blog');
         }
 
     }

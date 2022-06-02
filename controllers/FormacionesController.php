@@ -23,7 +23,7 @@ class FormacionesController{
         if(!$isAdmin){
 
             //se redirecciona
-            header('Content-Type: text/html; charset=utf-8; Location: /');
+            header('location: /');
         }
 
         //Consulta de todas las categorías
@@ -84,7 +84,7 @@ class FormacionesController{
         if(!$isAdmin){
 
             //se redirecciona
-            header('Content-Type: text/html; charset=utf-8; Location: /');
+            header('location: /');
         }
 
         //plantilla cv
@@ -203,7 +203,7 @@ class FormacionesController{
 
                         if(empty($problemas)){
 
-                            header('Content-Type: text/html; charset=utf-8; Location: /formaciones/index?result=1');
+                            header('location: /formaciones/index?result=1');
                         }
                     }
 
@@ -238,7 +238,7 @@ class FormacionesController{
         if(!$isAdmin){
 
             //se redirecciona
-            header('Content-Type: text/html; charset=utf-8; Location: /');
+            header('location: /');
         }
 
         //para usar plantilla CV
@@ -269,7 +269,7 @@ class FormacionesController{
         //Si no pasa validación, redirección
         if(!$id){
 
-           header('Content-Type: text/html; charset=utf-8; Location: /formaciones/index');
+           header('location: /formaciones/index');
           
         }else{
 
@@ -399,7 +399,7 @@ class FormacionesController{
         
                                 if(empty($problemas)){
         
-                                    header('Content-Type: text/html; charset=utf-8; Location: /formaciones/index?result=2');
+                                    header('location: /formaciones/index?result=2');
                                 }
 
                             }
@@ -440,7 +440,7 @@ class FormacionesController{
         if(!$isAdmin){
 
             //se redirecciona
-            header('Content-Type: text/html; charset=utf-8; Location: /');
+            header('location: /');
         }
         
         //Cuando se hace llamada POST
@@ -475,7 +475,7 @@ class FormacionesController{
 
                     if($exito){
 
-                        header('Content-Type: text/html; charset=utf-8; Location: /formaciones/index?result=3');
+                        header('location: /formaciones/index?result=3');
                     }
                 }
             }
