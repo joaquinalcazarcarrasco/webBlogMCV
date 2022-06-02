@@ -458,7 +458,7 @@ class FormacionesController{
                 $problemas = [];
 
                 foreach($competenciasFormacionessBorrar as $competencia){
-                    echo $competencia->idCompetencia . ' - ' . $competencia->idFormacion;
+                    //echo $competencia->idCompetencia . ' - ' . $competencia->idFormacion;
                     $exito = $competencia->erase();
                     
                     if(!$exito){

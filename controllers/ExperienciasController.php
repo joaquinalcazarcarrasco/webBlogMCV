@@ -423,7 +423,7 @@ class ExperienciasController{
                 $problemas = [];
 
                 foreach($competenciasExperienciasBorrar as $competencia){
-                    echo $competencia->idCompetencia . ' - ' . $competencia->idExperiencia;
+                    //echo $competencia->idCompetencia . ' - ' . $competencia->idExperiencia;
                     $exito = $competencia->erase();
                     
                     if(!$exito){
