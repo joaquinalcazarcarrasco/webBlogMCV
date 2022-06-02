@@ -234,16 +234,16 @@ class PaginasController{
             if(empty($errores)){
 
                 //Se crea una instancia de PHPMailer
-                $email = new PHPMailer();
+                $email = new PHPMailer(); 
 
                 //Se configura SMTP
                 $email->isSMTP();//se indica que se usa este protocolo
-                $email->Host = 'smtp.mailtrap.io';
+                $email->Host = 'mail.joaquinalcazarcarrasco.com';
                 $email->SMTPAuth = true;//indicamos que se debe autenticar
-                $email->Username = '78d96e0950237a';//usuario
-                $email->Password = 'c9c3c356a2c627';//contraseña
-                $email->SMTPSecure = 'tls';//protocolo de seguridad
-                $email->Port = 2525;//Puerto al que se conectará
+                $email->Username = 'contacto@joaquinalcazarcarrasco.com';//usuario
+                $email->Password = $_ENV['DB__PASS'];//contraseña
+                $email->SMTPSecure = 'ssl';//protocolo de seguridad
+                $email->Port = 465;//Puerto al que se conectará
 
                 //Ajustar el contenido del email
                 $nombreContacto = $contacto['nombre'];
