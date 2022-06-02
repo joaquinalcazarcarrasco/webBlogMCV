@@ -60,7 +60,7 @@ function showAlertCV($code, $entidad){
 
 //sanitising html from form
 function sanitise($html){
-    $sanitise = htmlspecialchars($html);
+    $sanitise = htmlspecialchars($html, ENT_NOQUOTES, "UTF-8");
     return $sanitise;
 }
 
