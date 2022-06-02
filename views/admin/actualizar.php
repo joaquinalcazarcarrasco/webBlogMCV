@@ -21,6 +21,7 @@
                 echo '</pre>';
 
                 echo DIR_IMAGES . $news->image;
+                echo $_SERVER['DOCUMENT_ROOT'];
                 exit;
             ?>
 
