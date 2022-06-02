@@ -17,7 +17,7 @@
 
             <?php 
                 echo '<pre>';
-                var_dump($news);
+                var_dump($news->title);
                 echo '</pre>';
                 exit;
             ?>
@@ -27,7 +27,7 @@
                     <legend>Actualizando entrada</legend>
                     <input type="hidden" id="user_id" name="user_id" value="<?php echo $_SESSION['id']; ?>" />
                     <label for="title">Título*</label>
-                    <input type="text" id="title" name="title" placeholder="Your title..." value="<?php echo sanitise($news->title); ?>"/>
+                    <input type="text" id="title" name="title" placeholder="Tu título..." value="<?php echo sanitise($news->title); ?>"/>
                     <label for="image">Sube tu imagen*</label>
                     <input type="file" id="image" name="image" accept="image/jpeg, image/png" />
                     <?php if($news->image && file_exists(DIR_IMAGES . $news->image)): ?>
