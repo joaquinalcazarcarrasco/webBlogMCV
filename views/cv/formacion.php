@@ -52,15 +52,15 @@
                             <h6 class="competencias__heading">Competencias adquiridas</h6>
                             <?php foreach($subcategoriasPorCategoria[$categoria->id] as $subcategoria): ?>
                                 <ul class="competencias__listado">
-                                    <?php foreach($competenciasPorSubcategoria[$subcategoria->id] as $competencia): ?>
-                                        <?php 
-                                            echo '<pre>';
-                                            var_dump($competenciasPorSubcategoria[$subcategoria->id]->count);
-                                            echo '</pre>';
-                                            exit;
-                                            
-                                            ?>
+                                    <?php foreach($competenciasPorSubcategoria[$subcategoria->id] as $competencia):
+                                        
+                                        if($competencia===end($competenciasPorSubcategoria[$subcategoria->id])):
+
+                                        ?>
+                                            <li class="competencias__item"><?php echo $competencia->nombre; ?></li>
+                                    <?php else: ?>
                                         <li class="competencias__item"><?php echo $competencia->nombre. ', '; ?></li>
+                                    <?php endif; ?>
                                     <?php endforeach; ?>
                                     <li class="competencias__item">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cursor-text" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#333333" fill="none" stroke-linecap="round" stroke-linejoin="round">
