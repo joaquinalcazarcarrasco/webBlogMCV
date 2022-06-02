@@ -346,7 +346,8 @@ fieldset{
     content: " - ";
 }
 .entry ul{
-    list-style-type: circle;
+    list-style-type: disc;
+    margin-left: 2rem;
 }
 @media (min-width: 992px) {
     .entry__img{
