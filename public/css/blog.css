@@ -346,8 +346,13 @@ fieldset{
     content: " - ";
 }
 .entry ul, .entry ol{
-    list-style-type: disc;
     margin-left: 5rem;
+}
+.entry ul{
+    list-style-type: disc;
+}
+.entry li{
+    margin: 1rem 0;
 }
 @media (min-width: 992px) {
     .entry__img{
