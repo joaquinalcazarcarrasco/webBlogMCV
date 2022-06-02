@@ -83,8 +83,6 @@ class SubcategoriasFormaciones extends Entity {
         $query .= join("', '", array_values($attr));
         $query .= "');";
 
-        echo $query;
-
         //execution of the query
         $result = self::$db->query($query);
 
