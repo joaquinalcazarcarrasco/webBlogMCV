@@ -55,7 +55,7 @@
                                     <?php foreach($competenciasPorSubcategoria[$subcategoria->id] as $competencia): ?>
                                         <?php 
                                             echo '<pre>';
-                                            var_dump($competenciasPorSubcategoria[$subcategoria->id]);
+                                            var_dump($competenciasPorSubcategoria[$subcategoria->id]->count);
                                             echo '</pre>';
                                             exit;
                                             
