@@ -16,12 +16,8 @@
             <?php endforeach; ?>
 
             <?php 
-                echo '<pre>';
-                var_dump(sanitise($news->title));
-                echo '</pre>';
-
-                echo DIR_IMAGES . $news->image;
-                echo $_SERVER['DOCUMENT_ROOT'];
+                
+                echo $_SERVER;
                 exit;
             ?>
 
