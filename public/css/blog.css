@@ -345,6 +345,9 @@ fieldset{
 .entry__info span::before{
     content: " - ";
 }
+.entry ul{
+    list-style-type: circle;
+}
 @media (min-width: 992px) {
     .entry__img{
         width: 50%;
