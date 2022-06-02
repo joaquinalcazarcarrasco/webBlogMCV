@@ -15,14 +15,6 @@
                 </div>
             <?php endforeach; ?>
 
-            <?php 
-                
-                echo '<pre>';
-                var_dump($_SERVER);
-                echo '</pre>';
-                exit;
-            ?>
-
             <form class="form-creating-news" method="POST" enctype="multipart/form-data">
                 <fieldset>
                     <legend>Actualizando entrada</legend>
