@@ -19,6 +19,8 @@
                 echo '<pre>';
                 var_dump(sanitise($news->title));
                 echo '</pre>';
+
+                echo DIR_IMAGES . $news->image;
                 exit;
             ?>
 
