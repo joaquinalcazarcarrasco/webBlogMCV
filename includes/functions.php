@@ -6,7 +6,7 @@ use Controllers\UsersController;
 
 define('TEMPLATES_URL', __DIR__ . '/templates');
 define('FUNCTIONS_URL', __DIR__ .'functions.php');
-define('DIR_IMAGES', $_SERVER['DOCUMENT_ROOT'] . '/images/imgNews/');
+define('DIR_IMAGES', $_SERVER['DOCUMENT_ROOT'] . '/webBlogMVC/public/images/imgNews/');
 define('CLASSES_URL', __DIR__ .'/../models');
 define('ITEMS_PAGE', 2);//paging limit
 
