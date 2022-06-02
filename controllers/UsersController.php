@@ -50,7 +50,7 @@ class UsersController{
         //Iniciando sesión
         session_start();
 
-        $url_actual = $_SERVER['PATH_INFO'] ?? '/';
+        $url_actual = $_SERVER['REQUEST_URI'] ?? '/';
 
         //Cerrando sesión
         $_SESSION = [];        
