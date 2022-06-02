@@ -12,7 +12,7 @@
 
                         <div class="credentials__fields">
                             <label for="username">Nombre: </label>
-                            <input type="text" name="nickname" id="nickname" placeholder="Username" value="<?php echo sanitise($user->nickname); ?>">
+                            <input type="text" name="nickname" id="nickname" placeholder="Username" value="<?php echo sanitise($user->nickname) ? sanitise($user->nickname) : ''; ?>">
 
                             <label for="password">Contraseña: </label>
                             <input type="password" name="password" id="password" placeholder="Password" value="<?php echo sanitise($user->password); ?>">
