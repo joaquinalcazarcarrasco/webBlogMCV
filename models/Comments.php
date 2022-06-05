@@ -62,7 +62,7 @@ class Comments extends Entity {
     public static function eraseByNewsId($news_id){
 
         $query = 'DELETE FROM ' . static::$table . ' WHERE news_id=' . $news_id .';';
-        $result = self::readQuery($query);
+        $result = self::$db->query($query);
 
         return $result;
 

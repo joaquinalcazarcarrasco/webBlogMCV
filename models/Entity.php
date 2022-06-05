@@ -146,11 +146,6 @@ class Entity{
         //Query to delete an element.
         $query = "DELETE FROM " . static::$table . " WHERE id = " . self::$db->escape_string($this->id) . ";";
 
-        echo '<pre>';
-        var_dump($query);
-        echo '</pre>';
-        exit;
-
         $result = self::$db->query($query);
 
         //Erase and redirect (message: erase ok)
