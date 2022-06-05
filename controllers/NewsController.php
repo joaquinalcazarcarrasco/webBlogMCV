@@ -239,19 +239,17 @@ class NewsController{
 
             //Validamos id
             $id = $_POST['id'];
-            echo '<pre>';
-            var_dump($id);
-            echo '</pre>';
             $id = filter_var($id, FILTER_VALIDATE_INT);
-            echo '<pre>';
-            var_dump($id);
-            echo '</pre>';
 
             if($id){
                 $newsToDelete = News::find($id);
+
+                echo '<pre>';
+                var_dump($newsToDelete);
+                echo '</pre>';
+                exit;
+
                 $newsToDelete->erase();
-            }else{
-                echo 'algún problema hubo antes de borrar';
             }
 
         }
