@@ -243,12 +243,6 @@ class NewsController{
 
             if($id){
                 $newsToDelete = News::find($id);
-
-                echo '<pre>';
-                var_dump($newsToDelete);
-                echo '</pre>';
-                exit;
-
                 $newsToDelete->erase();
             }
 
