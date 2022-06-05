@@ -133,4 +133,5 @@ class News extends Entity {
         return $row['contador'];
         
     }
+
 }

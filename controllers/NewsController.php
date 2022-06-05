@@ -241,9 +241,18 @@ class NewsController{
             $id = $_POST['id'];
             $id = filter_var($id, FILTER_VALIDATE_INT);
 
+            //Si el id es válido
             if($id){
-                $newsToDelete = News::find($id);
-                $newsToDelete->erase();
+
+                //Borramos comentarios asociados a la entrada
+                $commentsDeleted = Comments::eraseByNewsId($id);
+
+                //si se borraon los comentarios
+                if($commentsDeleted){
+                    $newsToDelete = News::find($id);
+                    $newsToDelete->erase();
+                }
+                
             }
 
         }

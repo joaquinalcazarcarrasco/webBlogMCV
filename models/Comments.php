@@ -57,5 +57,17 @@ class Comments extends Entity {
         return $result;
 
     }
+
+    //función para borrar todos los comentarios asociados a una entrada
+    public static function eraseByNewsId($news_id){
+
+        $query = 'DELETE FROM ' . static::$table . ' WHERE news_id=' . $news_id .';';
+        $result = self::readQuery($query);
+
+        return $result;
+
+    }
+
+
     
 }
