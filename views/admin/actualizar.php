@@ -37,7 +37,7 @@
                     </textarea>
 
                     <div class="text-right mt2">
-                        <input type="submit" id="submitNews" name="submitNews" class="button green" value="Submit">
+                        <input type="submit" id="submitNews" name="submitNews" class="button green" value="Actualizar">
                     </div>
                 </fieldset>
             </form><!--.news-->

@@ -1,5 +1,5 @@
 
-            <h1>Entradas</h1>
+            <h1>Blog</h1>
         </div>
     </header><!-- .header -->
     <div class="main">
