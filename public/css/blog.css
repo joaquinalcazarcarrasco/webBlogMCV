@@ -24,6 +24,13 @@ html{
     font-size: 62.5%;
     height: 100%;
 }
+@media (min-width: 992px) {
+    html{
+        font-size: 50%;
+
+    }
+    
+}
 *, *::before, *:after{box-sizing: inherit;}
 body{
     font-family: var(--mainFont);
@@ -40,7 +47,7 @@ h2,p{
     margin: 2rem 0;
     padding: 0;
 }
-h1{font-size: 8rem;}
+h1{font-size: 5rem;}
 h2{font-size: 3rem;}
 h3{font-size: 3rem;}
 h4{font-size: 2.5rem;}
@@ -52,6 +59,7 @@ p, li{
 }
 p:last-of-type{margin: 0;}
 @media (min-width: 992px) {
+    h1{font-size: 8rem;}
     h2{font-size: 3rem;}
     h2,p{
         margin: 1rem 0;
