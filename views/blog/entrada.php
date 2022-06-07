@@ -2,7 +2,7 @@
     use Model\Users;
 ?>
            
-           <h1><?php echo $news->title; ?></h1>
+           <h1>Blog</h1>
         </div>
     </header><!-- .header -->
     <div class="main">
