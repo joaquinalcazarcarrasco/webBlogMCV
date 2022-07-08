@@ -90,30 +90,43 @@
             ?> 
                  
             </ul>
-            <a href="#">prueba</a>
+            <a id="botonPruebajQuery" href="#">prueba</a>
         </div>
     </div><!-- .paging -->
 <?php endif; ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-    $.ajax({
-        url: 'https://ckan-coruna-294-visualizaciones.jelastic.labs.gmv.com/api/3/action/package_search?q=concesiones',
-        dataType: 'json',
-        async: false,
-        success: function(data) {
-            console.log('Pude entrar');
-            for(n=0; n<data.result.results.length; n++)
-            {
-                for(r=0;r<data.result.results[n].resources.length; r++)
-                {
-                    console.log(data.result.results[n].resources[r].name);
+
+    $(document).ready(function(){
+        function pruebaAjax(){
+            $.ajax({
+                url: 'https://ckan-coruna-294-visualizaciones.jelastic.labs.gmv.com/api/3/action/package_search?q=concesiones',
+                dataType: 'json',
+                async: false,
+                success: function(data) {
+                    console.log('Pude entrar');
+                    for(n=0; n<data.result.results.length; n++)
+                    {
+                        for(r=0;r<data.result.results[n].resources.length; r++)
+                        {
+                            console.log(data.result.results[n].resources[r].name);
+                        }
+                    }
+                },
+                error: function(xhr, textStatus, errorThrown){
+                    console.log('error ' + xhr.responseText);
                 }
-            }
-        },
-        error: function(xhr, textStatus, errorThrown){
-            console.log('error ' + xhr.responseText);
+            });
         }
+
+        $("#botonPruebajQuery").click(pruebaAjax());
+
     });
+
+    
+
+
+    
 </script>
 </body>
 </html>
