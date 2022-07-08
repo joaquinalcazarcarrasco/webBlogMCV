@@ -103,6 +103,10 @@
                 url: 'https://ckan-coruna-294-visualizaciones.jelastic.labs.gmv.com/api/3/action/package_search?q=concesiones',
                 dataType: 'json',
                 async: false,
+                headers: {
+                    "accept": "application/json",
+                    "Access-Control-Allow-Origin":"*"
+                },
                 success: function(data) {
                     console.log('Pude entrar');
                     for(n=0; n<data.result.results.length; n++)
